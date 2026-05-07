@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Project</title>
+<style>
+    body {
+        background-image: url("https://static.vecteezy.com/system/resources/thumbnails/004/447/751/small/abstract-pink-fluid-wave-background-free-vector.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: #f37aa3;
+        justify-content: center;
+        margin: auto;
+        font-weight: bold;
+        font-family: "Lucida Console", "Courier New", monospace;
+        }
+    .gallery{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:20px;
+        padding:20px;
+    }
+
+    .classbox{
+        background: #FFF7CD;
+        width:220px;
+        border-radius:15px;
+        padding:10px;
+        box-shadow:0 0 10px pink;
+    }
+
+    .classbox img{
+        width:100%;
+        height:220px;
+        object-fit:cover;
+        border-radius:10px;
+    }
+
+    .name{
+        margin-top:10px;
+        font-weight:bold;
+        color:#F39EB6;
+    }
+
+    .caption{
+        color:rgb(255, 104, 154);
+        font-size:14px;
+    }
+    .container {
+        background-color: #FFF7CD;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 0 0 10px rgb(253, 56, 151);
+        text-align: center;
+    }
+    .navbar {
+        background-color: #FFF7CD;
+    }
+    button {
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        background-color: rgba(247, 91, 169, 0.933);
+        cursor: pointer;
+    }
+    h1 {
+        color: #f86f93;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: #FFF7CD;
+        padding: 10px;
+        border-radius: 15px;
+    }
+    #textofnav{
+        color: #F57799;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    label, input {
+        color: #F57799;
+        font-weight: bold;  
+        font-family: 'Courier New', Courier, monospace;          
+    }
+    #textofnav{
+            color: #F39EB6;
+            font-family: "Lucida Console", "Courier New", monospace;
+            font-weight: bold;
+            font-size: 20px;
+            position: relative;
+            font-size: 20px;
+            position: relative;
+	    }
+
+    #textofnav::after{
+            content: '';
+            height: 4px;
+            width: 0%;
+            margin: 0 auto;
+            background-color: #F39EB6;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            transition: all 0.3s;
+        }
+
+    #textofnav:hover::after{
+            width: 100%;
+        }
+</style>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-light fixed-top">
+		
+	<div class="container-fluid">
+		<a class="navbar-brand" href="page1.html" id="textofnav">10-Ruby</a>
+		
+		<div class="collapse navbar-collapse">
+			<ul class="navbar-nav mx-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="page1.html" id="textofnav">Classmate List</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="page2.html" id="textofnav">Attendance Checker</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="page3.html" id="textofnav">Class Activitues</a>
+				</li>
+			</ul>
+			
+			<form class="d-flex">
+				<input class="form-control" type="search" placeholder="Search...">
+				<button class="btn btn-default" type="submit">Seach</button>
+			</form>
+		</div>
+
+	</div>
+	</nav>
+
+<br><br><br><br>    
+
+<h1>Highlights of Our 10-Ruby Journey</h1>
+
+<div class="gallery" id="gallery"></div>
+
+    <py-script src='page3.py'></py-script>
+</body>
+</html>
